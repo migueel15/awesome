@@ -17,9 +17,7 @@
 rm -rf $XDG_CONFIG_HOME/awesome
 
 # Install dependencies
----
----
----
+In procces...
 
 # Install configuration
 git clone https://github.com/migueel15/awesome.git $XDG_CONFIG_HOME/awesome

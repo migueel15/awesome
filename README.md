@@ -13,4 +13,16 @@
 
 ### Installation
 ```sh 
+# Remove previous configuration
+rm -rf $XDG_CONFIG_HOME/awesome
+
+# Install dependencies
+---
+---
+---
+
+# Install configuration
+git clone https://github.com/migueel15/awesome.git $XDG_CONFIG_HOME/awesome
+
+# Restart awesome to take effect (Ctrl + r)
 ```

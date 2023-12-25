@@ -81,6 +81,7 @@ ruled.client.connect_signal("request::rules", function()
     }
   }
 
+
   -- Picture in picture in all tags
   ruled.client.append_rule {
     rule = {
@@ -113,6 +114,20 @@ ruled.client.connect_signal("request::rules", function()
       raise     = true,
       screen    = awful.screen.preferred,
       placement = awful.placement.no_overlap + awful.placement.no_offscreen
+    }
+  }
+
+  ruled.client.append_rule {
+    rule = {
+      name = "floating-terminal"
+    },
+    properties = {
+      floating  = true,
+      ontop     = true,
+      width     = 640,
+      height    = 480,
+      border_color = beautiful.colors.secondary,
+      placement = awful.placement.centered,
     }
   }
 

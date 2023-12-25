@@ -2,6 +2,7 @@ local awful = require("awful")
 local hotkeys_popup = require("awful.hotkeys_popup")
 local app = require("configuration.apps")
 local naughty = require("naughty")
+local floating_terminal = require("configuration.utils.spawn_terminal_floating")
 
 
 local modkey = "Mod4"
@@ -14,6 +15,9 @@ awful.mouse.append_global_mousebindings({
 
 -- Keyboard keys
 awful.keyboard.append_global_keybindings({
+  awful.key({modkey, "Control"}, "Return", function()
+    floating_terminal()
+  end),
 
   awful.key(
     { modkey, "Control" },

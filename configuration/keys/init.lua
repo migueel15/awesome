@@ -181,7 +181,7 @@ awful.keyboard.append_global_keybindings({
     { description = "restore minimized", group = "client" }),
 
   -- Display config and restart
-  awful.key({ modkey, "Control" }, "l", function ()
+  awful.key({ modkey, "Control" }, "l", function()
     awful.spawn(app.autorandrDual)
     awful.spawn.with_shell("awesome-client 'awesome.restart()'")
   end),

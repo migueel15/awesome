@@ -2,7 +2,7 @@ local rofi = "~/.config/awesome/configuration/ui/rofi/"
 
 local app = {}
 
-app.terminal = "alacritty"
+app.terminal = "kitty"
 app.editor = os.getenv("EDITOR") or "nano"
 app.editor_cmd = app.terminal .. " -e " .. app.editor
 app.vscode = "code"
@@ -30,5 +30,6 @@ app.bluetooth = "blueberry"
 app.networkManager = "nm-applet"
 app.picom = "picom"
 app.autorandrDual = "autorandr -l DockedOnly"
+app.window_picker = "rofi -show window -theme " .. rofi .. "actual_windows.rasi"
 
 return app

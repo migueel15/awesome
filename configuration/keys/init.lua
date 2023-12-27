@@ -15,7 +15,7 @@ awful.mouse.append_global_mousebindings({
 
 -- Keyboard keys
 awful.keyboard.append_global_keybindings({
-  awful.key({modkey, "Control"}, "Return", function()
+  awful.key({ modkey, "Control" }, "Return", function()
     floating_terminal()
   end),
 
@@ -60,6 +60,11 @@ awful.keyboard.append_global_keybindings({
     { description = "run chatgpt", group = "launcher" }),
   awful.key({ modkey, }, "g", function() awful.spawn(app.github) end,
     { description = "run github", group = "launcher" }),
+
+  awful.key({ modkey, "Control" }, "d", function()
+      awful.spawn.with_shell(app.window_picker)
+    end,
+    { description = "run window_picker", group = "launcher" }),
 
   awful.key({ modkey, "Shift" }, "l",
     function()

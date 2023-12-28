@@ -14,7 +14,7 @@ else
 end
 
 if settings.vscodeTheme then
-  local setVSCodeTheme   = require("configuration.utils.vscode-colorscheme")
+  local setVSCodeTheme = require("configuration.utils.vscode-colorscheme")
   setVSCodeTheme(theme.vscode)
 end
 
@@ -29,3 +29,4 @@ if settings.alacrittyTheme then
 end
 
 return theme
+

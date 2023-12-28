@@ -1,6 +1,6 @@
 local theme      = {}
 theme.font       = "Iosevka Nerd Font Propo, Medium 11"
-theme.wallpaper  = "~/.config/awesome/configuration/theme/wallpapers/orange_landscape.jpg"
+theme.wallpaper  = "~/.config/awesome/configuration/theme/wallpapers/Orange_Landscape.jpg"
 theme.vscode     = "Default Dark Modern"
 theme.obsidian   = "Por defecto"
 local colors     = {}

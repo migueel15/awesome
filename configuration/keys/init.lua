@@ -2,9 +2,8 @@ local awful = require("awful")
 local hotkeys_popup = require("awful.hotkeys_popup")
 local app = require("configuration.apps")
 local naughty = require("naughty")
+
 local floating_terminal = require("configuration.utils.spawn_terminal_floating")
-
-
 local modkey = "Mod4"
 
 -- Mouse keys
@@ -65,6 +64,11 @@ awful.keyboard.append_global_keybindings({
       awful.spawn.with_shell(app.window_picker)
     end,
     { description = "run window_picker", group = "launcher" }),
+
+  awful.key({ modkey }, "s", function()
+      require("configuration.ui.rofi.search_spotlight").setup()
+    end,
+    { description = "search selector", group = "launcher" }),
 
   awful.key({ modkey, "Shift" }, "l",
     function()

@@ -1,17 +1,7 @@
-/*
- *
- * Author  : Aditya Shakya
- * Mail    : adi1090x@gmail.com
- * Github  : @adi1090x
- * Twitter : @adi1090x
- *
- */
 
 configuration {
 	font:							"Cascadia Code PL 16";
-    show-icons:                     true;
 	icon-theme: 					"Papirus";
-    display-drun: 					"";
     drun-display-format:            "{name}";
     disable-history:                false;
     fullscreen:                     false;
@@ -39,7 +29,6 @@ prompt {
 	padding: 						0px;
 	background-color: 				@primary;
 	text-color: 					@secondary;
-	font:							"feather 18";
 }
 
 entry {
@@ -68,41 +57,25 @@ inputbar {
 listview {
     background-color:               @primary;
     padding:                        0px;
-    columns:                        1;
-    lines:                          6;
+    lines: 6;
+    column:                        1;
     spacing:                        5px;
     cycle:                          true;
     dynamic:                        true;
     layout:                         vertical;
 }
 
-mainbox {
-    background-color:               @primary;
-	border:							3px;
-    border-radius:                  0px;
-	border-color:					@secondary;
-    children:                       [ inputbar, listview ];
-    spacing:                       	5px;
-    padding:                        5px;
-}
 
 element {
-    background-color:               @primary;
+    background-color:               #ffffff;
     text-color:                     @text;
     orientation:                    horizontal;
     border-radius:                  0px;
 	padding: 						8px;
 }
 
-element-icon {
-    background-color:               transparent;
-    text-color:               		inherit;
-    size:                           24px;
-    border:                         0px;
-}
 
 element-text {
-    background-color:               transparent;
     text-color:               		inherit;
     expand:                         true;
     horizontal-align:               0;
@@ -111,9 +84,18 @@ element-text {
 }
 
 element selected {
-    background-color:               @secondary;
+    background-color:               #ff0000;
     text-color:                     @primary;
 	border:							0px 0px 0px 0px;
     border-radius:                  10px;
     border-color:                  	@secondary;
+}
+
+mainbox {
+	border:							3px;
+    border-radius:                  0px;
+	border-color:					@secondary;
+    children:                       [ inputbar, listview ];
+    spacing:                       	5px;
+    padding:                        5px;
 }

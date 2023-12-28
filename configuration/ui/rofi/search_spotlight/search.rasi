@@ -1,0 +1,65 @@
+@import "colors.rasi"
+
+configuration {
+	font:							"Cascadia Code PL 16";
+    show-icons:                     true;
+	icon-theme: 					"Papirus";
+    display-drun: 					"";
+    drun-display-format:            "{name}";
+    disable-history:                false;
+    fullscreen:                     false;
+	hide-scrollbar: 				true;
+	sidebar-mode: 					false;
+}
+
+window {
+    transparency:                   "real";
+    background-color:               @primary;
+    text-color:                     @text;
+	border:							0px 0px 0px 0px;
+	border-color:					@secondary;
+    border-radius:                  0px;
+	width:							500px;
+    location:                       center;
+    x-offset:                       0;
+    y-offset:                       0;
+}
+
+prompt {
+    enabled: 						true;
+	padding: 						0px;
+	background-color: 				@primary;
+	text-color: 					@secondary;
+}
+
+entry {
+    background-color:               @primary;
+    text-color:                     @text;
+    placeholder-color:              @text;
+    expand:                         true;
+    horizontal-align:               0;
+    placeholder:                    "Search...";
+	padding: 						0px 0px 0px 5px;
+    blink:                          true;
+}
+
+inputbar {
+	children: 						[ prompt, entry ];
+    background-color:               @primary;
+    text-color:                     @text;
+    expand:                         false;
+	border:							0px 0px 1px 0px;
+    border-radius:                  0px;
+	border-color:					@secondary;
+    margin:                         0px;
+    padding:                        10px;
+}
+
+listview {
+  enabled: false;
+}
+
+mainbox {
+  backgroud-color: @primary;
+  children: [inputbar,listview];
+}

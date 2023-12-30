@@ -7,16 +7,7 @@ local gears = require("gears")
 ------- CLIENTS -------
 -----------------------
 
-ruled.client.connect_signal("request::rules", function()
-  -- Notion Tag 1
-  ruled.client.append_rule {
-    rule = {
-      class = "notion-app-enhanced"
-    },
-    properties = {
-      tag = screen[1].tags[1]
-    }
-  }
+ruled.client.connect_signal("request::rules", function(c)
   if screen[2] then
     -- Screen 2
     ruled.client.append_rule {
@@ -122,12 +113,12 @@ ruled.client.connect_signal("request::rules", function()
       name = "floating-terminal"
     },
     properties = {
-      floating  = true,
-      ontop     = true,
-      width     = 640,
-      height    = 480,
+      floating     = true,
+      ontop        = true,
+      width        = 640,
+      height       = 480,
       border_color = beautiful.colors.secondary,
-      placement = awful.placement.centered,
+      placement    = awful.placement.centered,
     }
   }
 

@@ -2,7 +2,7 @@ local awful = require("awful")
 local hotkeys_popup = require("awful.hotkeys_popup")
 local app = require("configuration.apps")
 local naughty = require("naughty")
-
+local beautiful = require("beautiful")
 local floating_terminal = require("configuration.utils.spawn_terminal_floating")
 local modkey = "Mod4"
 
@@ -45,7 +45,11 @@ awful.keyboard.append_global_keybindings({
       awful.spawn.with_shell("sh ~/Scripts/YTDownloader.sh")
     end,
     { description = "download yt video", group = "launcher" }),
-  awful.key({ modkey, }, "n", function() awful.spawn(app.notion) end,
+  awful.key({ modkey, }, "n", function()
+      local tag = screen[1].tags[beautiful.tag_number + 1]
+      tag:view_only()
+      awful.screen.focus(1)
+    end,
     { description = "open notion", group = "launcher" }),
   awful.key({ modkey }, "d", function()
     awful.spawn.with_shell(app.buscador)

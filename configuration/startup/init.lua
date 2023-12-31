@@ -16,12 +16,8 @@ if not gears.filesystem.file_readable(pathFile) then
   awful.spawn(app.solaar)
   awful.spawn(app.mpris)
   awful.spawn(app.picom)
+  awful.spawn(app.notion)
   awful.spawn.with_shell("~/Scripts/SyncDotfiles.sh")
-
-  local notion = awful.spawn(app.notion, {
-    tag = screen[1].tags[beautiful.tag_number + 1],
-  })
-  -- Open notion (own firefox profile in main monitor, last tag)
 end
 
 

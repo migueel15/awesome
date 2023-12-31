@@ -10,10 +10,6 @@ function SetWorkspace(s)
     table.insert(icons, beautiful.tag.icon)
   end
 
-  if s.index == 1 then
-    table.insert(icons, "")
-  end
-
   awful.tag(icons, s, awful.layout.suit.tile)
 
   s.mytaglist = awful.widget.taglist {

@@ -46,9 +46,7 @@ awful.keyboard.append_global_keybindings({
     end,
     { description = "download yt video", group = "launcher" }),
   awful.key({ modkey, }, "n", function()
-      local tag = screen[1].tags[beautiful.tag_number + 1]
-      tag:view_only()
-      awful.screen.focus(1)
+      awful.spawn(app.notion)
     end,
     { description = "open notion", group = "launcher" }),
   awful.key({ modkey }, "d", function()

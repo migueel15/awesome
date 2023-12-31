@@ -1,6 +1,6 @@
 local theme      = {}
 theme.font       = "Iosevka Nerd Font Propo, Medium 11"
-theme.wallpaper  = "~/.config/awesome/configuration/theme/wallpapers/Topographic_Nord_1.png"
+theme.wallpaper  = "~/.config/awesome/configuration/theme/wallpapers/topographic_nord_1.png"
 theme.vscode     = "Nordracula"
 theme.obsidian   = "Obsidian Nord"
 local colors     = {}

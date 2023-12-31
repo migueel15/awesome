@@ -1,6 +1,6 @@
 local theme      = {}
 theme.font       = "Iosevka Nerd Font Propo, Medium 11"
-theme.wallpaper  = "~/.config/awesome/configuration/theme/wallpapers/Gruvbox_forest.jpg"
+theme.wallpaper  = "~/.config/awesome/configuration/theme/wallpapers/gruvbox_forest.jpg"
 theme.vscode     = "Gruvbox Dark Medium"
 theme.obsidian   = "Obsidian gruvbox"
 local colors     = {}

@@ -90,9 +90,6 @@ awful.keyboard.append_global_keybindings({
     end,
     { description = "logout from awesome", group = "launcher" }),
 
-  awful.key({ modkey, "Control" }, "l",
-    function() awful.spawn.with_shell("xtrlock") end,
-    { description = "run window locker for disabling keyboard", group = "launcher" }),
   awful.key({ modkey, }, ".", function() awful.spawn(app.emoji) end,
     { description = "run rofi emoji", group = "launcher" }),
   awful.key({ modkey, }, "t", function() awful.spawn.with_shell(app.todo) end,
@@ -199,8 +196,7 @@ awful.keyboard.append_global_keybindings({
 
   -- Display config and restart
   awful.key({ modkey, "Control" }, "l", function()
-    awful.spawn(app.autorandrDual)
-    awful.spawn.with_shell("awesome-client 'awesome.restart()'")
+    require("configuration.utils.check-windows")
   end),
   -- Media buttons Keyboard
   awful.key({}, "XF86AudioPlay", function() awful.spawn("playerctl play-pause") end),

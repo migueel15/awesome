@@ -11,18 +11,17 @@ local pathFile = "/tmp/startUp.txt"
 if not gears.filesystem.file_readable(pathFile) then
   local command = "echo started > " .. pathFile
   awful.spawn.with_shell(command)
+  require("configuration.utils.check-windows")
 
   awful.spawn(app.solaar)
   awful.spawn(app.mpris)
   awful.spawn(app.picom)
   awful.spawn.with_shell("~/Scripts/SyncDotfiles.sh")
 
-  -- Open notion (own firefox profile in main monitor, last tag)
   local notion = awful.spawn(app.notion, {
     tag = screen[1].tags[beautiful.tag_number + 1],
-    -- maximized_horizontal = true,
-    -- maximized_vertical   = true
   })
+  -- Open notion (own firefox profile in main monitor, last tag)
 end
 
 

@@ -90,8 +90,8 @@ awful.keyboard.append_global_keybindings({
 
   awful.key({ modkey, }, ".", function() awful.spawn(app.emoji) end,
     { description = "run rofi emoji", group = "launcher" }),
-  awful.key({ modkey, }, "t", function() awful.spawn.with_shell(app.todo) end,
-    { description = "run rofi todo", group = "launcher" }),
+  awful.key({ modkey, }, "t", function() awful.spawn.with_shell(app.create_notion_task) end,
+    { description = "create task in notion", group = "launcher" }),
   awful.key({ modkey, "Control" }, "Delete", function() awful.spawn.with_shell("systemctl poweroff") end,
     { description = "shutdown system", group = "launcher" }),
 

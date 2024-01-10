@@ -45,11 +45,11 @@ M._string_keys = "echo '" .. table.concat(M.keys, "\n") .. "'"
 M.setup = function()
   awful.spawn.easy_async_with_shell(
     M._string_keys ..
-    " | rofi -config ~/.config/awesome/configuration/ui/rofi/search_spotlight/selector.rasi -dmenu -p 'Select Search Engine' -match 'fuzzy'",
+    " | rofi -theme ~/.config/awesome/configuration/ui/rofi/search_spotlight/selector.rasi -dmenu -p 'Search Engine' -matching fuzzy",
     function(engine)
       engine = string.gsub(engine, "%s", "")
       awful.spawn.easy_async_with_shell(
-        "rofi -config ~/.config/awesome/configuration/ui/rofi/search_spotlight/search.rasi -dmenu -p " ..
+        "rofi -theme ~/.config/awesome/configuration/ui/rofi/search_spotlight/search.rasi -dmenu -p " ..
         engine, function(query)
           if string.len(string.gsub(engine, "%s", "")) ~= 0 and string.len(string.gsub(query, "%s", "")) ~= 0 then
             local full_query = M.options["pages"][engine]["url"] .. query

@@ -32,6 +32,6 @@ app.bluetooth = "blueberry"
 app.networkManager = "nm-applet"
 app.picom = "picom"
 app.autorandrDual = "autorandr -l DockedOnly"
-app.window_picker = "rofi -show window -theme " .. rofi .. "actual_windows.rasi"
+app.window_picker = "rofi -show window -matching fuzzy -theme " .. rofi .. "actual_windows.rasi"
 
 return app

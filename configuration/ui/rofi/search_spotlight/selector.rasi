@@ -1,7 +1,8 @@
-
 configuration {
 	font:							"Cascadia Code PL 16";
+    show-icons:                     false;
 	icon-theme: 					"Papirus";
+    display-drun: 					"";
     drun-display-format:            "{name}";
     disable-history:                false;
     fullscreen:                     false;
@@ -29,6 +30,7 @@ prompt {
 	padding: 						0px;
 	background-color: 				@primary;
 	text-color: 					@secondary;
+	font:							"Cascadia Code PL 16";
 }
 
 entry {
@@ -57,25 +59,41 @@ inputbar {
 listview {
     background-color:               @primary;
     padding:                        0px;
-    lines: 6;
-    column:                        1;
+    columns:                        1;
+    lines:                          6;
     spacing:                        5px;
     cycle:                          true;
     dynamic:                        true;
     layout:                         vertical;
 }
 
+mainbox {
+    background-color:               @primary;
+	border:							3px;
+    border-radius:                  0px;
+	border-color:					@secondary;
+    children:                       [ inputbar, listview ];
+    spacing:                       	5px;
+    padding:                        5px;
+}
 
 element {
-    background-color:               #ffffff;
+    background-color:               @primary;
     text-color:                     @text;
     orientation:                    horizontal;
     border-radius:                  0px;
 	padding: 						8px;
 }
 
+element-icon {
+    background-color:               transparent;
+    text-color:               		inherit;
+    size:                           24px;
+    border:                         0px;
+}
 
 element-text {
+    background-color:               transparent;
     text-color:               		inherit;
     expand:                         true;
     horizontal-align:               0;
@@ -84,18 +102,9 @@ element-text {
 }
 
 element selected {
-    background-color:               #ff0000;
+    background-color:               @secondary;
     text-color:                     @primary;
 	border:							0px 0px 0px 0px;
     border-radius:                  10px;
     border-color:                  	@secondary;
-}
-
-mainbox {
-	border:							3px;
-    border-radius:                  0px;
-	border-color:					@secondary;
-    children:                       [ inputbar, listview ];
-    spacing:                       	5px;
-    padding:                        5px;
 }

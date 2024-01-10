@@ -9,7 +9,7 @@
  */
 
 configuration {
-	font:							"Iosevka Nerd Font 18";
+	font:							"Cascadia Code PL 16";
     show-icons:                     true;
 	icon-theme: 					"Papirus";
     display-drun: 					"";
@@ -40,7 +40,7 @@ prompt {
 	padding: 						0px;
 	background-color: 				@primary;
 	text-color: 					@secondary;
-	font:							"feather 18";
+	font:							"Cascadia Code PL 16";
 }
 
 entry {

@@ -1,8 +1,8 @@
-{
-  "theme": "nord", // name of the theme (options: filenames in configuration/colorschemes)
-  "vscodeTheme": true,
-  "obsidianTheme": true,
-  "obsidianPath": "~/SecondBrain",
-  "alacrittyTheme": true,
-  "alacrittyPath": "~/.config/alacritty/alacritty.yml"
-}
+  {
+    "theme": "nord", //name of the theme (options: filenames in configuration/theme/colorschemes)
+    "vscodeTheme": true,
+    "obsidianTheme": true,
+    "obsidianPath": "~/SecondBrain",
+    "alacrittyTheme": true,
+    "alacrittyPath": "~/.config/alacritty/alacritty.yml"
+  }

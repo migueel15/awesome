@@ -77,10 +77,10 @@ theme.systray_icon_spacing   = dpi(3)
 ------------------------------
 
 --------- Tag widget ---------
-theme.taglist_fg_focus       = theme.colors.secondary
-theme.taglist_fg_urgent      = theme.colors.grey
-theme.taglist_fg_occupied    = theme.colors.grey
-theme.fg_normal              = theme.colors.text
+theme.taglist_fg_focus       = theme.colors.white
+theme.taglist_fg_urgent      = theme.colors.secondary
+theme.taglist_fg_occupied    = theme.colors.secondary
+theme.fg_normal              = theme.colors.grey
 theme.bg_normal              = theme.colors.primary
 theme.bg_focus               = theme.colors.primary
 theme.bg_urgent              = theme.colors.primary

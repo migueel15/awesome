@@ -2,7 +2,7 @@ local rofi = "~/.config/awesome/configuration/ui/rofi/"
 
 local app = {}
 
-app.terminal = "kitty"
+app.terminal = "kitty tmux"
 app.editor = os.getenv("EDITOR") or "nano"
 app.editor_cmd = app.terminal .. " -e " .. app.editor
 app.vscode = "code"

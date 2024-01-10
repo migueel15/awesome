@@ -1,11 +1,11 @@
 -----------------------------
 ------- Awesome Theme -------
 -----------------------------
-local xresources = require("beautiful.xresources")
-local dpi        = xresources.apply_dpi
+local xresources             = require("beautiful.xresources")
+local dpi                    = xresources.apply_dpi
 -------- Custom theme --------
-local settings = require("configuration.utils.read-json-settings")
-local theme      = require("configuration.utils.set-colorscheme")
+local settings               = require("configuration.utils.read-json-settings")
+local theme                  = require("configuration.utils.set-colorscheme")
 ------------------------------
 
 ------- Client borders -------
@@ -77,9 +77,9 @@ theme.systray_icon_spacing   = dpi(3)
 ------------------------------
 
 --------- Tag widget ---------
-theme.taglist_fg_focus       = theme.colors.tag_focus
-theme.taglist_fg_urgent      = theme.colors.secondary
-theme.taglist_fg_occupied    = theme.colors.secondary
+theme.taglist_fg_focus       = theme.colors.secondary
+theme.taglist_fg_urgent      = theme.colors.grey
+theme.taglist_fg_occupied    = theme.colors.grey
 theme.fg_normal              = theme.colors.text
 theme.bg_normal              = theme.colors.primary
 theme.bg_focus               = theme.colors.primary

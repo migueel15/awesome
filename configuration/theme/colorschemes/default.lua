@@ -19,7 +19,6 @@ colors.dark      = "#1b1c1d"
 
 colors.primary   = colors.dark
 colors.secondary = colors.orange
-colors.text      = colors.grey
-colors.tag_focus = colors.white
+colors.text      = colors.white
 theme.colors     = colors
 return theme

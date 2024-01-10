@@ -8,7 +8,7 @@
  */
 
 configuration {
-	font:							"Cascadia Code PL 16";
+	font:							"JetBrains Mono 16";
     show-icons:                     true;
 	icon-theme: 					"Papirus";
     display-drun: 					"";

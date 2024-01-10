@@ -9,7 +9,7 @@
  */
 
 configuration {
-	font:							"Cascadia Code PL 16";
+	font:							"JetBrains Mono 16";
     show-icons:                     true;
 	icon-theme: 					"Papirus";
     display-drun: 					"";
@@ -40,7 +40,7 @@ prompt {
 	padding: 						0px;
 	background-color: 				@primary;
 	text-color: 					@secondary;
-	font:							"Cascadia Code PL 16";
+	font:							"JetBrains Mono 16";
 }
 
 entry {

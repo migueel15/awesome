@@ -1,5 +1,7 @@
+@import "../colors.rasi"
+
 configuration {
-	font:							"Cascadia Code PL 16";
+	font:							"JetBrains Mono 16";
     show-icons:                     false;
 	icon-theme: 					"Papirus";
     display-drun: 					"";
@@ -10,7 +12,6 @@ configuration {
 	sidebar-mode: 					false;
 }
 
-@import "colors.rasi"
 
 window {
     transparency:                   "real";

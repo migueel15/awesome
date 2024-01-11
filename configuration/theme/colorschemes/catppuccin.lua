@@ -2,7 +2,7 @@ local theme      = {}
 theme.font       = "Iosevka Nerd Font Propo, Medium 11"
 theme.wallpaper  = "~/.config/awesome/configuration/theme/wallpapers/catppuccin_gradient_blue.png"
 theme.vscode     = "Catppuccin Mocha"
-theme.obsidian   = "Obsidian Nord"
+theme.obsidian   = "Catppuccin"
 local colors     = {}
 
 colors.green     = "#a6e3a1"

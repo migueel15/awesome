@@ -1,6 +1,6 @@
-source ~/.config/awesome/configuration/ui/notion/config.sh
+source ~/.config/awesome/configuration/ui/rofi/notion/config.sh
 
-TITLE=$(rofi -dmenu -p "Enter title:" -config "~/.config/awesome/configuration/ui/notion/create_task.rasi")
+TITLE=$(rofi -dmenu -p "Enter title:" -config "~/.config/awesome/configuration/ui/rofi/notion/create_task.rasi")
 
 if [[ -n $TITLE ]]; then
   curl 'https://api.notion.com/v1/pages' \

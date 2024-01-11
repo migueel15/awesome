@@ -13,7 +13,7 @@ app.sysmenu = rofi .. "powermenu.sh &"
 app.obsidian = "obsidian"
 
 app.notion = "firefox https://notion.so"
-app.create_notion_task = "~/.config/awesome/configuration/ui/notion/create_task.sh"
+app.create_notion_task = "~/.config/awesome/configuration/ui/rofi/notion/create_task.sh"
 
 app.discord = "discord"
 app.whatsapp = "whatsapp-nativefier"

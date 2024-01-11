@@ -1,5 +1,4 @@
 local awful = require("awful")
-local naughty = require("naughty")
 local app = require("configuration.apps")
 
 local M = {}

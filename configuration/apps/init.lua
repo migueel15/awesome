@@ -2,7 +2,7 @@ local rofi = "~/.config/awesome/configuration/ui/rofi/"
 
 local app = {}
 
-app.terminal = "kitty tmux"
+app.terminal = "kitty"
 app.editor = os.getenv("EDITOR") or "nano"
 app.editor_cmd = app.terminal .. " -e " .. app.editor
 app.vscode = "code"
@@ -20,7 +20,7 @@ app.whatsapp = "whatsapp-nativefier"
 app.detectScreen = "autorandr -c"
 app.solaar = "solaar --window=hide"
 app.mpris = "mpris-proxy"
-app.calendar = app.browser .. " https://www.notion.so/miguedm/2b8e1751b1e740c79d2c11975d93bb6d"
+app.calendar = app.browser .. " https://calendar.notion.so/"
 app.chatgpt = app.browser .. " https://chat.openai.com/chat"
 app.github = app.browser .. " https://github.com/migueel15"
 app.buscador = "rofi -no-config -no-lazy-grab -show drun -modi drun -theme " .. rofi .. "launcher.rasi"

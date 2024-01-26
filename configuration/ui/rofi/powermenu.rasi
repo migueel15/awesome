@@ -1,14 +1,7 @@
-/*
- *
- * Author  : Aditya Shakya
- * Mail    : adi1090x@gmail.com
- * Github  : @adi1090x
- * Twitter : @adi1090x
- *
- */
+@import "colors.rasi"
 
 configuration {
-	font:							"Iosevka Nerd Font 18";
+	font:							"JetBrains Mono 16";
     show-icons:                     true;
 	icon-theme: 					"Papirus";
     display-drun: 					"";
@@ -19,14 +12,12 @@ configuration {
 	sidebar-mode: 					false;
 }
 
-@import "colors.rasi"
-
 window {
     transparency:                   "real";
-    background-color:               @bg;
+    background-color:               @primary;
     text-color:                     @text;
 	border:							0px 0px 0px 0px;
-	border-color:					@primary;
+	border-color:					@secondary;
     border-radius:                  0px;
 	width:							350px;
     location:                       center;
@@ -37,21 +28,21 @@ window {
 prompt {
     enabled: 						true;
 	padding: 						0px 0px 0px 10px;
-	background-color: 				@bga;
-	text-color: 					@text;
+	background-color: 				@primary;
+	text-color: 					@secondary;
 }
 
 textbox-prompt-colon {
 	padding: 						0px;
-	background-color: 				@bga;
-	text-color: 					@primary;
+	background-color: 				@primary;
+	text-color: 					@secondary;
 	expand: false;
 	str: "";
 	font:							"feather 18";
 }
 
 entry {
-    background-color:               @al;
+    background-color:               @primary;
     text-color:                     @text;
     placeholder-color:              @text;
     expand:                         true;
@@ -63,7 +54,7 @@ entry {
 
 inputbar {
 	children: 						[ textbox-prompt-colon, prompt ];
-    background-color:               @bga;
+    background-color:               @primary;
     text-color:                     @text;
     expand:                         false;
 	border:							0px 0px 1px 0px;
@@ -74,7 +65,7 @@ inputbar {
 }
 
 listview {
-    background-color:               @al;
+    background-color:               @primary;
     padding:                        0px;
     columns:                        1;
     lines:                          5;
@@ -85,17 +76,17 @@ listview {
 }
 
 mainbox {
-    background-color:               @al;
-	border:							0px;
+    background-color:               @primary;
+	border:							3px;
     border-radius:                  0px;
-	border-color:					@primary;
+	border-color:					@secondary;
     children:                       [ inputbar, listview ];
     spacing:                       	5px;
     padding:                        5px;
 }
 
 element {
-    background-color:               @al;
+    background-color:               @primary;
     text-color:                     @text;
     orientation:                    horizontal;
     border-radius:                  0px;
@@ -120,8 +111,8 @@ element-text {
 
 element selected {
     background-color:               @secondary;
-    text-color:                     @bg;
+    text-color:                     @primary;
 	border:							0px 0px 0px 0px;
-    border-radius:                  0px;
-    border-color:                  	@primary;
+    border-radius:                  10px;
+    border-color:                  	@secondary;
 }

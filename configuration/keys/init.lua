@@ -80,14 +80,6 @@ awful.keyboard.append_global_keybindings({
     end,
     -- ,
     { description = "logout from awesome", group = "launcher" }),
-
-
-  awful.key({ modkey }, "l",
-    function()
-      awful.spawn.with_shell("systemctl suspend")
-    end,
-    { description = "logout from awesome", group = "launcher" }),
-
   awful.key({ modkey, }, ".", function() awful.spawn(app.emoji) end,
     { description = "run rofi emoji", group = "launcher" }),
   awful.key({ modkey, }, "t", function() awful.spawn.with_shell(app.create_notion_task) end,

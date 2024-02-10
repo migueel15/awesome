@@ -1,5 +1,5 @@
   {
-    "theme": "catppuccin", //name of the theme (options: filenames in configuration/theme/colorschemes)
+    "theme": "catppuccin", // [ "catppuccin", "gruvbox", "nord", "rose-pine", "default" ]
     "vscodeTheme": true,
     "obsidianTheme": true,
     "obsidianPath": "~/SecondBrain",
